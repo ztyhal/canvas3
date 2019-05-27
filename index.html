@@ -10,10 +10,29 @@
 <body>
   <canvas id="xxx" width=300 height=300></canvas>
   <div id=actions class="actions">
-    <button id=eraser>橡皮擦</button>
-    <button id=brush>画笔</button>
+      <svg id="pen" class=" active icon">
+          <use xlink:href="#iconpen"></use>
+      </svg>
+      <svg id="eraser" class="icon">
+          <use xlink:href="#iconeraser"></use>
+      </svg>
+      <svg id="clear" class="icon">
+          <use xlink:href="#iconclear"></use>
+      </svg>
+      <svg id="download" class="icon">
+          <use xlink:href="#iconsave"></use>
+      </svg>
   </div>
-
+<ol class="colors">
+  <li id="red" class="red"></li>
+  <li id="blue" class="blue"></li>
+  <li id="green" class="green"></li>
+</ol>
+<ol class="sizes">
+  <li id="thin" class="thin"></li>
+  <li id="thick" class="thick"></li>
+</ol>
 </body>
 <script src="./mian.js"></script>
+<script src="//at.alicdn.com/t/font_1213201_wh1owraf3vs.js"></script>
 </html >
